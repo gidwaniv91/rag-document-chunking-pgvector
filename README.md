@@ -24,18 +24,20 @@ Chunking may sound simple, but it’s the foundation of accurate, context-aware 
 ```bash
 git clone https://github.com/yourusername/rag-document-chunking-pgvector.git
 cd rag-document-chunking-pgvector
+```
 
 ### 2. Create and activate a virtual environment
 ```bash
 python -m venv .venv
 source .venv/bin/activate   # On Windows: .venv\Scripts\activate
-
+```
 ### 3. Install dependencies
 ```bash
 #pip install langchain langchain-openai openai psycopg2-binary pgvector psycopg2 tiktoken langchain_text_splitters 
-
+```
 ### 4. Enable pgvector in your postgres database
 ```bash
 CREATE DATABASE vectordb;
 \c vectordb
 CREATE EXTENSION IF NOT EXISTS vector;
+```
